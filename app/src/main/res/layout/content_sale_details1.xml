@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <!--Original Price: $-->
+
+    <TextView
+        android:id="@+id/tvCost"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="100dp"
+        android:gravity="right"
+        android:text="@string/original_price"
+        app:layout_constraintEnd_toStartOf="@+id/tvCostAmount"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Sale: (%)-->
+
+    <TextView
+        android:id="@+id/tvCostAmount"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="100dp"
+        android:gravity="left"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="50%" />
+
+    <TextView
+        android:id="@+id/tvSale"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="100dp"
+        android:gravity="right"
+        android:text="@string/sale_percent"
+        app:layout_constraintEnd_toStartOf="@+id/tvSaleAmount"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCost" />
+
+    <!--You Pay: $-->
+
+    <TextView
+        android:id="@+id/tvSaleAmount"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="100dp"
+        android:gravity="left"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCostAmount"
+        tools:text="50%" />
+
+    <TextView
+        android:id="@+id/tvSalePrice"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="100dp"
+        android:gravity="right"
+        android:text="@string/you_pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvSalePriceAmount"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiscount"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <!--You Save: $-->
+
+    <TextView
+        android:id="@+id/tvSalePriceAmount"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="100dp"
+        android:gravity="left"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiscountAmount"
+        app:layout_constraintVertical_bias="0.117"
+        tools:text="50%" />
+
+    <TextView
+        android:id="@+id/tvDiscount"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="100dp"
+        android:gravity="right"
+        android:text="@string/you_save"
+        app:layout_constraintEnd_toStartOf="@+id/tvDiscountAmount"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSale" />
+
+    <TextView
+        android:id="@+id/tvDiscountAmount"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="100dp"
+        android:gravity="left"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSaleAmount"
+        tools:text="50%" />
+</androidx.constraintlayout.widget.ConstraintLayout>
